@@ -105,6 +105,21 @@ def save_data(df, database_filename):
     pass
 
 def main():
+    """
+    Process and clean data, and save it to a SQLite database.
+
+    This function takes the file paths of messages, categories, and the database
+    as command line arguments and performs the following tasks:
+    1. Loads the messages and categories data.
+    2. Cleans the data.
+    3. Saves the cleaned data to a SQLite database.
+
+    Arguments:
+    messages_filepath (str): Filepath to the messages CSV file.
+    categories_filepath (str): Filepath to the categories CSV file.
+    database_filepath (str): Filepath for the output SQLite database.
+
+    """
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]

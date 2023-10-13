@@ -204,6 +204,25 @@ def build_model():
 
 #Method for performance evaluation
 def eval_result(y_test, y_pred):
+    """
+    Evaluate the performance of a multi-label classification model.
+
+    This function computes various classification metrics for each label in the
+    multi-label classification problem, including accuracy, precision, recall, G-Mean,
+    and F1 score. It takes the true labels (y_test) and predicted labels (y_pred) as input.
+
+    Args:
+        y_test (pd.DataFrame): True labels (ground truth) for each label.
+        y_pred (numpy.ndarray): Predicted labels for each label.
+
+    Returns:
+        pd.DataFrame: A DataFrame with columns for each label, including Accuracy, Precision,
+        Recall, G-Mean, and F1 score.
+
+    Example usage:
+    result_df = eval_result(y_test, y_pred)
+    print(result_df)
+    """
     y_pred_pd = pd.DataFrame(y_pred, columns=y_test.columns)
     res=[]
     col_names = y_test.columns
@@ -247,11 +266,34 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    """
+    Save a machine learning model to a file using Pickle.
+
+    This function takes a trained machine learning model and saves it to a file
+    specified by the 'model_filepath'. The saved model can be later loaded and
+    used for making predictions.
+
+    Args:
+        model: A trained machine learning model (e.g., scikit-learn model).
+        model_filepath (str): The filepath where the model will be saved.
+
+    """
     pickle.dump(model, open(model_filepath, 'wb'))
     pass
 
 
 def main():
+    """
+    Train a machine learning model for classifying disaster messages.
+
+    This function loads data from a specified database, builds and trains a machine
+    learning model, evaluates its performance, and saves the trained model to a pickle file.
+
+    Arguments:
+    database_filepath (str): Filepath to the SQLite database containing message data.
+    model_filepath (str): Filepath to save the trained model as a pickle file.
+
+    """
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))

@@ -1,5 +1,5 @@
 # Disaster Response Pipeline 
-![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/header.png?token=GHSAT0AAAAAACIODOYRZ6XQXFGNBZBVI2ZAZJJHMGQ)
+![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/header.png)
 
 ## Project Overview
 The Udacity Disaster Response Pipeline project is a web application that analys## Project Components

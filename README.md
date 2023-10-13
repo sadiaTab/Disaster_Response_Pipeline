@@ -1,11 +1,32 @@
 # Disaster Response Pipeline 
 ![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/header.png?token=GHSAT0AAAAAACIODOYRZ6XQXFGNBZBVI2ZAZJJHMGQ)
-In this project thousands of real messages sent during natural disasters either through social media or directly to disaster response organisations.
-Build an ETL pipeline that processes message and category data from the csv files and load them to a SQLite database.
-Build a Machine learning pipeline which will read the database, create and save a multi output Supervised learning model.
-A web app will extract the data from the database to provide data visualisations, and use  ML model to classify new messages for 36 categories.
-Machine Learning is important to help different organisations to understand which messages are relevant to them and which messages to priotarise.
-During a disaster, they have the least capacity to filter out messages that matters. 
+
+## Project Overview
+The Udacity Disaster Response Pipeline project is a web application that analys## Project Components
+
+The project consists of the following components:
+
+- ETL (Extract, Transform, Load) Pipeline: Processes and cleans the data.
+- ML (Machine Learning) Pipeline: Trains and tests a multi-output classification model.
+- Flask Web App: Provides a user interface for classifying new messages.
+
+## ETL Pipeline
+The ETL pipeline loads and processes the data from various sources, performs data cleaning, and stores the clean data in a SQLite database. This data is later used for training the machine learning model.
+
+## ML Pipeline
+The ML pipeline includes data preprocessing, model training, and model evaluation. It uses a multi-output classification model to categorize messages into different disaster-related categories.
+
+## Flask Web App
+The Flask web app offers a user-friendly interface to input a message, which is then classified into relevant categories using the trained model. Users can also explore visualizations of the dataset.
+
+## Running
+To run the project, follow these steps:
+
+### Data Cleaning
+1. Run the ETL pipeline to clean and store the data:
+   ```bash
+   python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+    ```
 
 ## How to run the app
 

@@ -52,7 +52,7 @@ The project consists of the following components:
 To clone the git repository: 
 
     
-        `git clone https://github.com/sadiaTab/Disaster_Response_Pipeline.git`
+        git clone https://github.com/sadiaTab/Disaster_Response_Pipeline.git
     
 
 To run the project, follow these steps:
@@ -79,10 +79,11 @@ To run the project, follow these steps:
 4. Go to `http://127.0.0.1:3000/` to use the web application.
 
 ## 4. Screenshots
-### App frontpage
+
+- This is the app frontpage showing training data distribution and word cloud.
 
 ![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/training_data_distribution.png?token=GHSAT0AAAAAACIODOYRQBCO4VEWFX6LZPVUZJNEDAQ)
 
-### Classifying message into different disaster-related categories
+- This is the result page showing the classification of new message into different disaster-related categories by the machine learning model.
 
 ![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/result.png?token=GHSAT0AAAAAACIODOYQUQ2TZCILFFZSCEMOZJNEDTQ)

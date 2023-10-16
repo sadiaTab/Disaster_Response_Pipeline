@@ -87,3 +87,7 @@ To run the project, follow these steps:
 - This is the result page showing the classification of new message into different disaster-related categories by the machine learning model.
 
 ![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/result.png?token=GHSAT0AAAAAACIODOYQUQ2TZCILFFZSCEMOZJNEDTQ)
+
+## 5. Acknowledgement
+
+This app was created as part of the ![Udacity Data Scientist Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). The original dataset used in this project was initially curated by Udacity in partnership with ![Figure Eight (Appen)](https://appen.com/).

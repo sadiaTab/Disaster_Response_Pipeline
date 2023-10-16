@@ -1,38 +1,88 @@
-# Disaster Response Pipeline 
+# Disaster Response Pipeline Project
 ![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/header.png?token=GHSAT0AAAAAACIODOYR25WJ4SDLZYQZJK26ZJJHV7A)
 
-## Project Overview
+## 1. Project Overview
 The Udacity Disaster Response Pipeline project is a web application that analyzes and classifies messages related to disasters. The goal of this project is to help emergency responders quickly identify the most relevant messages during a disaster, enabling faster response and assistance.
 
-## Project Components
+## 2. Project Components
 
 The project consists of the following components:
 
-- ETL (Extract, Transform, Load) Pipeline: Processes and cleans the data.
-- ML (Machine Learning) Pipeline: Trains and tests a multi-output classification model.
-- Flask Web App: Provides a user interface for classifying new messages.
+### 2.1. ETL Pipeline
+- Loads the data from `messages` and `categories` datasets
+- Processes and cleans the data
+- Stores the clean data in a **SQLite database**
+- ETL pipeline code can be found in **_data/process_data.py_**
 
-## ETL Pipeline
-The ETL pipeline loads and processes the data from various sources, performs data cleaning, and stores the clean data in a SQLite database. This data is later used for training the machine learning model.
+### 2.2. Machine Learning Pipeline
+- Loads data from the **SQLite database**
+- Trains a multi-output classification model. 
+- Saves the final model as a pickle file
+- The model is used to categorise messages into different disaster-related categories.
+- Machine Learning pipeline code can be found in **_models/train_classifier.py_**
 
-## ML Pipeline
-The ML pipeline includes data preprocessing, model training, and model evaluation. It uses a multi-output classification model to categorize messages into different disaster-related categories.
 
-## Flask Web App
-The Flask web app offers a user-friendly interface to input a message, which is then classified into relevant categories using the trained model. Users can also explore visualizations of the dataset.
+### 2.3. Web Application
+- The Flask web app offers a user-friendly interface to input a message, which is then classified into relevant categories using the trained model.
+- Users can also explore visualizations of the dataset.
 
-## Running
-To run the project, follow these steps:
 
-### Data Cleaning
-1. Run the ETL pipeline to clean and store the data:
-   ```bash
-   python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+
+## 3. Getting Started
+
+### 3.1. Dependencies
+- **Python Version**: Python 3.11 
+- **Machine Learning Libraries**: 
+  - NumPy
+  - SciPy
+  - Pandas
+  - Scikit-Learn
+- **Natural Language Processing Libraries**: 
+  - NLTK (Natural Language Toolkit)
+- **SQLite Database Libraries**: 
+  - SQLAlchemy
+- **Model Loading and Saving Library**: 
+  - Pickle
+- **Web Application and Data Visualization Libraries**: 
+  - Flask
+  - Plotly
+
+### 3.2. Cloning the repository
+
+To clone the git repository: 
+
+    ```bash
+        git clone https://github.com/sadiaTab/Disaster_Response_Pipeline.git
     ```
 
-## How to run the app
+To run the project, follow these steps:
 
-Run following commands:
-- python process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db
-- python train_classifier.py data/DisasterResponse.db models/classifier.pkl
-- python run.py
+### 3.3. Running the project
+
+1. Run the ETL pipeline to clean and store the processed data in the database:
+   
+   ```bash
+   python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db
+    ```
+   ![Loading Data](loading_data)
+   
+3. Run the Machine Learning pipeline, which involves loading data from a database, training a classifier, and saving the classifier as a pickle file:
+   ```bash
+   python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+   ```
+    ![Saving Data](save_model)
+   
+4. Run the following command in the app directory:
+ ```bash
+   python run.py
+   ```
+4. Go to `http://127.0.0.1:3000/` to use the web application.
+
+## 4. Screenshots
+### App frontpage
+
+![App front](training_data_distribution)
+
+### Classifying message into different disaster-related categories
+
+![App front](result)

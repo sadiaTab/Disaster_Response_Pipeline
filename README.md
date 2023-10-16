@@ -1,5 +1,5 @@
 # Disaster Response Pipeline Project
-![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/sc_header.png?token=GHSAT0AAAAAACIODOYRJ5XSAVAT43NBGEZMZJNEBHA)
+![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/sc_header.png)
 
 ## 1. Project Overview
 The Udacity Disaster Response Pipeline project is a web application that analyzes and classifies messages related to disasters. The goal of this project is to help emergency responders quickly identify the most relevant messages during a disaster, enabling faster response and assistance.
@@ -64,13 +64,13 @@ To run the project, follow these steps:
    ```bash
    python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db
     ```
-   ![Loading Data](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/loading_data.png?token=GHSAT0AAAAAACIODOYRBSYTFESVS26UZGWMZJNECDA)
+   ![Loading Data](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/loading_data.png)
    
 3. Run the Machine Learning pipeline, which involves loading data from a database, training a classifier, and saving the classifier as a pickle file:
    ```bash
    python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
    ```
-    ![Saving Data](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/save_model.png?token=GHSAT0AAAAAACIODOYQA6IZIU7KJ5P4MYQKZJNECPA)
+    ![Saving Data](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/save_model.png)
    
 4. Run the following command in the app directory:
  ```bash
@@ -82,11 +82,11 @@ To run the project, follow these steps:
 
 - This is the app frontpage showing training data distribution and word cloud.
 
-![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/training_data_distribution.png?token=GHSAT0AAAAAACIODOYRQBCO4VEWFX6LZPVUZJNEDAQ)
+![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/training_data_distribution.png)
 
 - This is the result page showing the classification of new message into different disaster-related categories by the machine learning model.
 
-![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/result.png?token=GHSAT0AAAAAACIODOYQUQ2TZCILFFZSCEMOZJNEDTQ)
+![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/result.png)
 
 ## 5. Acknowledgement
 

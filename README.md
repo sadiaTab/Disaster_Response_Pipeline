@@ -64,13 +64,13 @@ To run the project, follow these steps:
    ```bash
    python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db
     ```
-   ![Loading Data](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/loading_data.png)
+   ![Loading Data](https://github.com/sadiaTab/Disaster_Response_Pipeline/blob/main/screenshots/loading_data.png?raw=true)
    
 3. Run the Machine Learning pipeline, which involves loading data from a database, training a classifier, and saving the classifier as a pickle file:
    ```bash
    python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
    ```
-    ![Saving Data](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/save_model.png)
+    ![Saving Data](https://github.com/sadiaTab/Disaster_Response_Pipeline/blob/main/screenshots/save_model.png?raw=true)
    
 4. Run the following command in the app directory:
  ```bash
@@ -82,11 +82,11 @@ To run the project, follow these steps:
 
 - This is the app frontpage showing training data distribution and word cloud.
 
-![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/training_data_distribution.png)
+![App front](https://github.com/sadiaTab/Disaster_Response_Pipeline/blob/main/screenshots/training_data_distribution.png?raw=true)
 
 - This is the result page showing the classification of new message into different disaster-related categories by the machine learning model.
 
-![App front](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/result.png)
+![App front](https://github.com/sadiaTab/Disaster_Response_Pipeline/blob/main/screenshots/result.png?raw=true)
 
 ## 5. Acknowledgement
 

@@ -90,4 +90,4 @@ To run the project, follow these steps:
 
 ## 5. Acknowledgement
 
-This app was created as part of the ![Udacity Data Scientist Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). The original dataset used in this project was initially curated by Udacity in partnership with ![Figure Eight (Appen)](https://appen.com/).
+This app was created as part of the [Udacity Data Scientist Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). The original dataset used in this project was initially curated by Udacity in partnership with [Figure Eight (Appen)](https://appen.com/).

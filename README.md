@@ -1,5 +1,5 @@
 # Disaster Response Pipeline Project
-![App header](https://raw.githubusercontent.com/sadiaTab/Disaster_Response_Pipeline/main/screenshots/sc_header.png)
+![App header](https://github.com/sadiaTab/Disaster_Response_Pipeline/blob/main/screenshots/sc_header.png?raw=true)
 
 ## 1. Project Overview
 The Udacity Disaster Response Pipeline project is a web application that analyzes and classifies messages related to disasters. The goal of this project is to help emergency responders quickly identify the most relevant messages during a disaster, enabling faster response and assistance.
